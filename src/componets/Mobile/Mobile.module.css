@@ -1,0 +1,45 @@
+.mobile {
+  margin: 3rem 0;
+}
+
+.container {
+  background: linear-gradient(to right, #171061, #481c35e4);
+  border-radius: 20px;
+  color: aliceblue;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  padding: 3rem 5rem;
+}
+.mobilePic {
+  width: 50%;
+}
+.mobilePic img {
+  margin: 0 10rem;
+  width: 50%;
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  .mobilePic img {
+    margin: 0 5rem;
+    width: 80%;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+  .content h1 {
+    text-align: left;
+  }
+  .mobilePic {
+    display: none;
+  }
+  .mobile {
+    margin: 3rem 1rem;
+  }
+}

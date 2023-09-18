@@ -1,0 +1,93 @@
+/* Orbit.css */
+
+.orbit {
+  background: linear-gradient(to right, #171061, #481c35e4);
+  color: aliceblue;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.content {
+  margin: 2rem 0;
+}
+
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+  position: relative;
+  margin: auto;
+  top: 25px;
+  left: 25px;
+  height: 300px;
+  width: 300px;
+}
+
+/* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+#inner-orbit {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #f8f8ff;
+  border-radius: 100%;
+  animation: spin-right 10s linear infinite;
+  z-index: 100;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.inner-orbit-circles {
+  position: absolute;
+  top: 62px;
+  left: -6px;
+}
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+#middle-orbit {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 225px;
+  height: 225px;
+  border: 2px solid #f8f8ff;
+  border-radius: 100%;
+  z-index: 100;
+  animation: spin-right 15s linear infinite;
+}
+
+/* ---------- Repeating styles for the middle orbiting circles ---------- */
+.middle-orbit-circles {
+  position: absolute;
+  padding: 10px;
+  background-color: #5f38ea;
+}
+
+/* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+#outer-orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 294px;
+  height: 294px;
+  border: 2px solid #f0f0f4;
+  border-radius: 100%;
+  animation: spin-right 20s linear infinite;
+}
+
+/* ---------- Repeating styles for the outer orbiting circles ---------- */
+.outer-orbit-circles {
+  position: absolute;
+  top: -17px;
+  left: 125px;
+  padding: 10px;
+  background-color: #5f38ea;
+}
+
+/* ---------- Animation ---------- */
+@keyframes spin-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,103 @@
+.financial {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  margin-right: 4rem;
+  margin-top: 3rem;
+}
+
+.content h1 {
+  font-size: 4rem;
+}
+.content p {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1a5afa;
+}
+
+.mobileImg {
+  width: 50%;
+  margin-left: 4rem;
+}
+.partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.partnersImg {
+  margin: 1rem;
+}
+
+.mobileImg img {
+  width: 55%;
+  height: 90vh;
+  margin: 1rem 0;
+}
+@media (max-width: 980px) {
+  .mobileImg img {
+    width: 100%;
+    height: 90vh;
+    margin: 1rem 0;
+  }
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    width: 60%;
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+  .content p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a5afa;
+  }
+}
+
+@media (max-width: 775px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a5afa;
+  }
+  .mobileImg {
+    width: 100%;
+    margin-left: 0;
+  }
+  .mobileImg img {
+    width: 60%;
+    height: 50%;
+    margin: 1rem auto;
+    /* border: 1px solid red; */
+  }
+  .content {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .financial {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+}
